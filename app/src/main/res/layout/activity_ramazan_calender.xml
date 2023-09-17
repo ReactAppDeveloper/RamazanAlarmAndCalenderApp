@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RamazanCalender"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/toolbar_layout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbar_layout"
+        android:background="@color/white"
+        android:id="@+id/layout1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ramazan"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_moon"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary_text"
+            android:textSize="12dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:background="@null"
+            android:drawableTop="@drawable/iccalender"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary_text"
+            android:textSize="12dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Day"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_calendarr"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary_text"
+            android:textSize="12dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sehr"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_moring"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary_text"
+            android:textSize="12dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Iftar"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_sunset"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/teal_primary_text"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rehmat"
+                    android:textColor="@color/teal_primary_dark"
+                    android:text="عشرہ رحمت"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="17 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Thursday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:20 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/myshape1"
+                        android:text="7:11 pm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="18 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="friday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:20 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:12 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="3"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="19 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="saturday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:19 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:12 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="sunday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:19 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:13 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="21 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="monday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:18 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:13 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="6"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="22 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="tuesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:17 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:14 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="23 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="wednesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="10.33dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:17 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:14 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="8"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="24 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="thursday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:16 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:15 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="9"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="25 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="friday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:16 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:15 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="10"
+                        android:background="@drawable/shape2"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="26 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="saturday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:15 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:16 pm"
+                        android:background="@drawable/shape3"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rehmat"
+                    android:textColor="@color/teal_primary_dark"
+                    android:text="عشرہ مغفرت"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="11"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="27 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sunday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:15 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/myshape1"
+                        android:text="7:16 pm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="12"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="28 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Monday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:15 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:17 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="13"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="29 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tuesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:14 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:17 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="14"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="30 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Wednesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:14 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:18 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="15"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="31 May 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Thursday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_transparent"
+                        android:text="4:14 am"
+                        android:textAllCaps="false"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:18 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="16"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="01 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Friday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:14 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:19 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="17"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="02 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Saturday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="10.33dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:13 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:19 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="18"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="03 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sunday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:13 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:20 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="19"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="04 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Monday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:13 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:20 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:background="@drawable/shape2"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="05 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tuesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:20 pm"
+                        android:background="@drawable/shape3"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rehmat"
+                    android:textColor="@color/teal_primary_dark"
+                    android:text="عشرہ جہنم سے آزادی"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="21"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="06 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Wednesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/myshape1"
+                        android:text="7:21 pm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="22"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="07 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Thursday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:21 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="23"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="08 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Friday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:22 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="24"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="09 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Saturday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:22 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="25"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="10 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sunday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_transparent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:22 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="26"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="11 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Monday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:23 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="27"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="12 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tuesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="10.33dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:23 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="28"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="13 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Wednesday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:23 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="29"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="14 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Thursday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:24 pm"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="30"
+                        android:background="@drawable/shape2"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="15 June 2018"
+                        android:background="@drawable/btn_transparent"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Friday"
+                        android:background="@color/teal_primary_dark"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4:12 am"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_transparent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_primary_dark"
+                        android:textSize="15dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7:24 pm"
+                        android:background="@drawable/shape3"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="23dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:textAlignment="center"
+                    android:text="Some Dates may vary slightly as they are determined by the lunar calendar" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <Spinner
+            android:id="@+id/selectLanguage"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+        </Spinner>
+        <Spinner
+            android:id="@+id/selectChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/complete_quran_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:footerDividersEnabled="true"
+        android:background="@drawable/spinner_button"
+        android:dividerHeight="3dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/container" />
+</RelativeLayout>

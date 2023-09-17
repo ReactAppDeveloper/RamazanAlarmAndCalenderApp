@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ramazanalarmandcalender.FirstKalma">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_firstkalma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/teal_primary_dark"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/third" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/play_button"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_playicon"
+                android:layout_weight="11" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stop_button"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_stop"
+                android:layout_weight="11" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
