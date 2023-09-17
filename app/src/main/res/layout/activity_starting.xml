@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StartingActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2.5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:background="@drawable/mainback"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_salaat"
+                    android:layout_width="0dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:drawableTop="@drawable/ic_prayman"
+                    android:text="Namaz Times"
+                    android:textSize="15dp"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:background="@drawable/button_round"
+                     />
+
+                <Button
+                    android:id="@+id/btn_ramazan_calender"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableTop="@drawable/ic_ramazan"
+                    android:text="Ramazan Calendar"
+                    android:textColor="@color/teal_primary_dark"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_round"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:drawablePadding="-30dp" />
+
+                <Button
+                    android:id="@+id/btn_hijri_calender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_calender"
+                    android:text="Hijri \nCalendar"
+                    android:textAllCaps="false"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:background="@drawable/button_round"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_qibla"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:drawableTop="@drawable/ic_qibla"
+                    android:text="Qibla"
+                    android:textSize="15dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:paddingTop="0dp"
+                    android:textAllCaps="false"
+                    android:drawablePadding="-30dp"
+                    android:background="@drawable/button_round"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:drawableTop="@drawable/ic_hands"
+                    android:text="Dua's"
+                    android:textColor="@color/teal_primary_dark"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:background="@drawable/button_round"
+                    android:id="@+id/btn_duas"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_videos"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_dua"
+                    android:text="Tasbeeh"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:drawablePadding="-30dp"
+                    android:background="@drawable/button_round"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_allah"
+                    android:text="Allah Names"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:background="@drawable/button_round"
+                    android:id="@+id/btn_allahnames"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left" />
+
+                <Button
+                    android:id="@+id/btn_kalmay"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/teal_primary_dark"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_kalma"
+                    android:text="Kalma's"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:background="@drawable/button_round" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_quran_ayah"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_quran"
+                    android:text="Quran"
+                    android:paddingTop="0dp"
+                    android:drawablePadding="-30dp"
+                    android:textColor="@color/teal_primary_dark"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_round"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:text="Powered By Dev4Sol"
+            android:textColor="@color/tealprimarycolor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
